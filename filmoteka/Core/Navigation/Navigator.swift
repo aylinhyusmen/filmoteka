@@ -21,10 +21,10 @@ final class Navigator {
     }
         
     func navigateToHome() {
-        guard let homeNavController: UINavigationController = instantiate(),
+        guard let navController = storyboard.instantiateInitialViewController() as? UINavigationController,
               let window = keyWindow else { return }
         
-        setRoot(homeNavController, on: window)
+        setRoot(navController, on: window)
     }
     
     func navigateToLogin(from navigationController: UINavigationController?) {
