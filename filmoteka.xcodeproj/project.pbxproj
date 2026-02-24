@@ -13,6 +13,7 @@
 		56A2A8D72F2695AA0024EC15 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 56A2A8D62F2695AA0024EC15 /* Realtime */; };
 		56A2A8D92F2695AA0024EC15 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 56A2A8D82F2695AA0024EC15 /* Storage */; };
 		56A2A8DB2F2695AA0024EC15 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 56A2A8DA2F2695AA0024EC15 /* Supabase */; };
+		56D7F1352F43ABD70052BCD4 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 56D7F1342F43ABD70052BCD4 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D7F1352F43ABD70052BCD4 /* IQKeyboardManagerSwift in Frameworks */,
 				56A2A8D52F2695AA0024EC15 /* PostgREST in Frameworks */,
 				56A2A8D32F2695AA0024EC15 /* Functions in Frameworks */,
 				56A2A8DB2F2695AA0024EC15 /* Supabase in Frameworks */,
@@ -146,6 +148,7 @@
 				56A2A8D62F2695AA0024EC15 /* Realtime */,
 				56A2A8D82F2695AA0024EC15 /* Storage */,
 				56A2A8DA2F2695AA0024EC15 /* Supabase */,
+				56D7F1342F43ABD70052BCD4 /* IQKeyboardManagerSwift */,
 			);
 			productName = filmoteka;
 			productReference = 563D92062F26924900E91DAF /* filmoteka.app */;
@@ -231,6 +234,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				56A2A8CF2F2695AA0024EC15 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				56D7F1332F43ABB40052BCD4 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 563D92072F26924900E91DAF /* Products */;
@@ -321,8 +325,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,8 +362,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,6 +639,14 @@
 				minimumVersion = 2.5.1;
 			};
 		};
+		56D7F1332F43ABB40052BCD4 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -669,6 +679,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 56A2A8CF2F2695AA0024EC15 /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Supabase;
+		};
+		56D7F1342F43ABD70052BCD4 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56D7F1332F43ABB40052BCD4 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
